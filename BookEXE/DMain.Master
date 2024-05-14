@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="DMain.Master.vb" Inherits="BookEXE.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<header runat="server">
+    <title>BookEXE</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="bootstrap.min.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+   		
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.aspx">
+                       <img src="img/logorb6.png" class="hidden-xs" style="margin-top:-20px;" alt="" width="" height="80" />
+                    </a>
+                </div>
+</div>
+	
+</header>
+<body>
+    <form id="form1" runat="server" class="form-label">
+        
+        <div style="width:100%; background-color:gray;" class="hidden-xs">
+        <div id="menubar1" class="container" style="margin-top:0px;">
+            <br />
+            <ul class="nav navbar-nav pull-center">
+            <li class="list-group-item list-group-item-action list-group-item-info"><a href="Index.aspx">หน้าหลัก</a></li>&nbsp;
+            <li class="list-group-item list-group-item-action list-group-item-info"><a href="Allofbook.aspx">หนังสือทั้งหมด</a></li>&nbsp;
+                <li class="list-group-item list-group-item-action list-group-item-info"><a href="Borrow_Book.aspx">ยืมหนังสือ</a></li>&nbsp;
+            <li class="list-group-item list-group-item-action list-group-item-info"><a href="AllUser.aspx">ผู้ใช้ทั้งหมด</a></li>&nbsp;
+            <li class="list-group-item list-group-item-action list-group-item-info"><a href="Author.aspx">รายชื่อผู้แต่ง</a></li>&nbsp;
+            <li class="list-group-item list-group-item-action list-group-item-info "><a href="Book_Au.aspx">Login</a></li>
+            
+    </ul>
+</div></div>
+<div id="shortIcon" style="width:100%; height:auto; background-color:#2b2c2f; margin-top:-5px;">
+<div class="container" style="margin-top:4px;">
+				<div class="row no-gutter">
+					
+</div></div></div><br /><br />
+
+
+
+<asp:ContentPlaceHolder ID="Main" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+    </form>
+    
+</body>
+    <footer style="background:#2b2c2f; color:#77715f;" id="footer">
+	<div class="container" style="font-size:small; margin-top:-10px;">
+		<div class="row">
+			<div class="col-sm-6 col-lg-6">
+				<div class="widget">
+					<h4 style="color:#fec52d">made by thanawat</h4>
+					<p>Email : thanawatpilumwong361@gmail.com</p>
+				</div>
+			</div>
+			</div>
+        </div>
+        
+	</footer>	
+    
+    <asp:contentplaceholder id="Footer" runat="server" />
+    
+</html>

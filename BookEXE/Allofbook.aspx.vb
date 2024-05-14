@@ -85,4 +85,8 @@
     Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Protected Sub GridView1_SelectedIndexChanged1(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

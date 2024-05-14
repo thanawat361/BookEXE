@@ -97,6 +97,7 @@
     <Content Include="Book_Au.aspx" />
     <Content Include="bootstrap.min.css" />
     <Content Include="Borrow_Book.aspx" />
+    <Content Include="css\bg.css" />
     <Content Include="css\loginstyle.css" />
     <Content Include="img\Authorlogo.png" />
     <Content Include="img\bookicon.png" />

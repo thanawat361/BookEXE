@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
         <link href="bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bg.css" />
+
 <div class="container">
     <center><h2>ยืมหนังสือ</h2></center><br /><br />
     <br /><center><asp:Image runat="server" ImageUrl="~/img/borrowbook.jpg" Height="300px" Width="900px" /></center><br /><br />

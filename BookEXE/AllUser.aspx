@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <link href="bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bg.css" />
+
     <div><center><h2>ผู้ใช้</h2></center></div><br />
    <div class="container">
        <center><asp:Image ID="Image1" runat="server" ImageUrl="~/img/person.png" Width="117px" Height="117px"/></center>

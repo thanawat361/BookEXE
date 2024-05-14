@@ -6,6 +6,8 @@
 <head runat="server">
     <title></title>
     <link href="../bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/bg.css" />
+
     <div style="width:100%; background-color:gray;" class="hidden-xs">
         <div id="menubar1" class="container" style="margin-top:0px;">
             <br />

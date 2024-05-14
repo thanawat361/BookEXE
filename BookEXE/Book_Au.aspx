@@ -3,7 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
         <link href="bootstrap.min.css" rel="stylesheet" />
-    
+        <link rel="stylesheet" href="css/bg.css" />
+
 <div class="container">
 <asp:Label runat="server" Text="Login Form" Font-Size="XX-Large" Font-Bold="true" ForeColor="#9900CC"></asp:Label>
  

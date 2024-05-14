@@ -20,7 +20,7 @@
                 <h1>เข้าสู่ระบบ</h1>
                 <span>ระบุชื่อผู้ใช้งาน & รหัสผ่าน</span>
                 <asp:TextBox ID="Username" runat="server"></asp:TextBox>
-                <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+                <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
                 <a href="#">Forget Your Password?</a>
                 <asp:Button ID="BtnLogin"  runat="server" Text="Login" />
             </form>

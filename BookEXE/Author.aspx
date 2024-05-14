@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
         <link href="bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bg.css" />
 
     <dir class="container">
         <center><h1>รายชื่อผู้แต่ง</h1>

@@ -14,8 +14,12 @@
     End Sub
 
     Protected Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles BtnAdd.Click
-        UserDS.Insert()
 
+        UserDS.Insert()
+        UserIDTB.Text = ""
+        UserNameTB.Text = ""
+
+        Panel1.Visible = False
     End Sub
 
     Protected Sub SqlDataSource1_Selecting1(sender As Object, e As SqlDataSourceSelectingEventArgs)

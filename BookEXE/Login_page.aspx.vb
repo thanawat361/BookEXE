@@ -1,30 +1,47 @@
-﻿Imports System.Data.SqlClient
+﻿
+Imports System.Data.SqlClient
 Public Class Login_page
     Inherits System.Web.UI.Page
-
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
-
     Protected Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
-        Dim conn As New SqlConnection
-        Dim cmd As New SqlCommand
-        conn.ConnectionString = "Data Source=XDPC\SQLEXPRESS01;Initial Catalog=JokMuDB;Integrated Security=True"
-        Dim objconn As SqlConnection = Nothing
-        Dim objcmd As SqlCommand = Nothing
+        Dim objConn As SqlConnection
+        Dim strConnString As String
+        Dim strSQL As StringBuilder
+        Dim objCmd As SqlCommand
+        Dim intCount As Integer = 0
 
-        objconn = New SqlConnection("Data Source=XDPC\SQLEXPRESS01;Initial Catalog=JokMuDB;Integrated Security=True")
-        objconn.Open()
+        '*** Open Connection ***'
+        strConnString = "Data Source=XDPC\SQLEXPRESS01;Initial Catalog=JokMuDB;Integrated Security=True"
+        objConn = New SqlConnection
+        objConn.ConnectionString = strConnString
+        objConn.Open()
 
-        Dim stmt As String = "SELECT COUNT(*) FROM UserLogin WHERE UserName=@username AND Pass = @pass  "
-        objcmd = New SqlCommand(stmt, objconn)
-        objcmd.Parameters.AddWithValue("@username", Username.Text)
-        objcmd.Parameters.AddWithValue("@Pass", Password.Text)
-        Dim count As Integer = objcmd.ExecuteScalar()
-        If (count > 0) Then
-            Response.Redirect("Logindone/WelcomeTOMyWorld.aspx")
+        '*** Check Login ***'
+        strSQL = New StringBuilder
+        strSQL.Append(" SELECT COUNT(*) FROM UserLogin ")
+        strSQL.Append(" WHERE UserName = @sUsername ")
+        strSQL.Append(" AND Pass = @sPassword ")
+        objCmd = New SqlCommand(strSQL.ToString(), objConn)
+        objCmd.Parameters.Add("@sUsername", SqlDbType.VarChar).Value = Me.UsernameTB.Text
+        objCmd.Parameters.Add("@sPassword", SqlDbType.VarChar).Value = Me.PasswordTB.Text
+        intCount = objCmd.ExecuteScalar()
+
+        objConn.Close()
+        objConn = Nothing
+
+        If intCount <= 0 Then
+            Me.lblStatus.ForeColor = Drawing.Color.Red
+            Me.lblStatus.Text = "Username or Password wrong!"
         Else
-            Response.Redirect("logindone/Loginfail.aspx")
+            Session("strUsername") = Me.ToString = UsernameTB.Text
+            Response.Redirect("LoginDone/WelcomeToMyWorld.aspx")
         End If
+
+
     End Sub
+
+    Protected Sub BtnSignup_click(sender As Object, e As EventArgs) Handles BtnSignup.Click
+        Response.Redirect("Signup_Page.aspx")
+    End Sub
+
+
 End Class

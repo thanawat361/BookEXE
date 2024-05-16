@@ -109,8 +109,10 @@
     <Content Include="img\rb6header.png" />
     <Content Include="img\rickroll.gif" />
     <Content Include="LoginDone\LoginFail.aspx" />
+    <Content Include="LoginDone\Work_All_Day.aspx" />
     <Content Include="LoginDone\WelcomeToMyWorld.aspx" />
     <Content Include="Login_page.aspx" />
+    <Content Include="Signup_Page.aspx" />
     <Content Include="Web.config" />
     <Content Include="Allofbook.aspx" />
     <Content Include="Index.aspx" />
@@ -143,6 +145,13 @@
     </Compile>
     <Compile Include="LoginDone\LoginFail.aspx.vb">
       <DependentUpon>LoginFail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LoginDone\Work_All_Day.aspx.designer.vb">
+      <DependentUpon>Work_All_Day.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDone\Work_All_Day.aspx.vb">
+      <DependentUpon>Work_All_Day.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="LoginDone\WelcomeToMyWorld.aspx.designer.vb">
@@ -205,6 +214,13 @@
     <Compile Include="AllUser.aspx.vb">
       <DependentUpon>AllUser.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Signup_Page.aspx.designer.vb">
+      <DependentUpon>Signup_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup_Page.aspx.vb">
+      <DependentUpon>Signup_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

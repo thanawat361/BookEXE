@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Login_page
+Partial Public Class WebForm4
 
     '''<summary>
     '''form1 control.
@@ -23,65 +23,74 @@ Partial Public Class Login_page
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''LogoLogin control.
+    '''now control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LogoLogin As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents now As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''UsernameTB control.
+    '''DateNowLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents UsernameTB As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DateNowLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PasswordTB control.
+    '''DateTB control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PasswordTB As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DateTB As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''lblStatus control.
+    '''DetailTb control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblStatus As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents DetailTb As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BtnLogin control.
+    '''BTNSubmit control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnLogin As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BTNSubmit As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Image1 control.
+    '''PanelGridView control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents PanelGridView As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''BtnSignup control.
+    '''GridView_exe control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnSignup As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents GridView_exe As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''WorkSDS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents WorkSDS As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

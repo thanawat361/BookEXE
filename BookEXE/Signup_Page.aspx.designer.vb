@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Login_page
+Partial Public Class Signup_Page
 
     '''<summary>
     '''form1 control.
@@ -23,13 +23,13 @@ Partial Public Class Login_page
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''LogoLogin control.
+    '''LogoSignup control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LogoLogin As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents LogoSignup As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
     '''UsernameTB control.
@@ -59,13 +59,13 @@ Partial Public Class Login_page
     Protected WithEvents lblStatus As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''BtnLogin control.
+    '''BtnSignup control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnLogin As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnSignup As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Image1 control.
@@ -77,11 +77,20 @@ Partial Public Class Login_page
     Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
-    '''BtnSignup control.
+    '''BtnLogin control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnSignup As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnLogin As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''UsersignupSDS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents UsersignupSDS As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

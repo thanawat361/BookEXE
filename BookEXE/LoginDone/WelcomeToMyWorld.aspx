@@ -13,6 +13,7 @@
             <br />
             <ul class="nav navbar-nav pull-center">
             <li class="list-group-item list-group-item-action list-group-item-info"><a href="../Index.aspx">หน้าหลัก</a></li>&nbsp;
+            <li class="list-group-item list-group-item-info"><a href="Work_All_Day.aspx">บันทึกฝึกงาน</a></li>
 
     </ul>
             </div></div><br /><br />
@@ -21,7 +22,7 @@
     <form id="form1" runat="server">
         <div class="container">
             <br /><center><h2>ล็อคอินสำเร็จ</h2><br />
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/img/boyAndGirl.jpg" Height="388px" Width="452px" BorderStyle="None" /></center>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/img/boyAndGirl.jpg" Height="388px" Width="452px" BorderWidth="2px" /></center>
         </div><br /><br />
         <div></div>
 
@@ -51,4 +52,17 @@
     
 
 </body>
+    <footer style="background:#2b2c2f; color:#77715f;" id="footer"><br />
+	<div class="container" style="font-size:small; margin-top:-10px;">
+		<div class="row">
+			<div class="col-sm-6 col-lg-6">
+				<div class="widget">
+					<h4 style="color:#fec52d">made by thanawat</h4>
+					<p>Email : thanawatpilumwong361@gmail.com</p>
+				</div>
+			</div>
+			</div>
+        </div>
+        
+	</footer>
 </html>

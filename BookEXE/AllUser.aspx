@@ -23,7 +23,7 @@
             <asp:BoundField DataField="UserType" HeaderText="ประเภทผู้ใช้งาน" SortExpression="UserType" />
         </Columns>
     </asp:GridView>
-    <br /><br />
+    <br /><br />    
        <div class="container">
            <asp:Button ID="BTNShowsBtnAdd" CssClass="btn-success" runat="server" Text="เพิ่มผู้ใช้งาน" /></div>
        <asp:Panel ID="Panel1" runat="server" Visible="false">
@@ -76,7 +76,7 @@
         </SelectParameters>
     </asp:SqlDataSource>
     <br />
-    </div>
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>

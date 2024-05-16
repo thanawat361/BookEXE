@@ -26,4 +26,19 @@
         </div>
     </form>
 </body>
+
+<footer style="background:#2b2c2f; color:#77715f;" id="footer"><br />
+	<div class="container" style="font-size:small; margin-top:-10px;">
+		<div class="row">
+			<div class="col-sm-6 col-lg-6">
+				<div class="widget">
+					<h4 style="color:#fec52d">made by thanawat</h4>
+					<p>Email : thanawatpilumwong361@gmail.com</p>
+				</div>
+			</div>
+			</div>
+        </div>
+        
+	</footer>
+
 </html>

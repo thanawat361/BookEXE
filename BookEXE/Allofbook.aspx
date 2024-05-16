@@ -7,7 +7,7 @@
 
     <div class="container">
         <center><h1>หนังสือทั้งหมด</h1>
-        <asp:Image ID="img"  runat="server" ImageUrl="~/img/rb6header.png" /><br /><br /></center>
+        <asp:Image ID="img"  runat="server" ImageUrl="~/img/rb6header.png" BorderWidth="1px" /><br /><br /></center>
 
 
     <h3>ข้อมูลหนังสือ</h3>
@@ -26,7 +26,7 @@
             </asp:TemplateField>
         <asp:TemplateField HeaderText="ลบออก">
             <ItemTemplate>
-                    <asp:Button ID="BtnDel" runat="server" Text="ลบออก" OnClientClick="return confirm('ยืนยัน?')" CssClass="btn btn-danger btn-xs" CommandName="DeleteBook" CommandArgument='<%#Eval("BookID") %>' />
+                    <asp:Button ID="BtnDel" runat="server" Text="ลบออก" OnClientClick="return confirm('ยืนยัน ?')" CssClass="btn btn-danger btn-xs" CommandName="DeleteBook" CommandArgument='<%#Eval("BookID") %>' />
                 </ItemTemplate>
         </asp:TemplateField>
 
@@ -39,11 +39,11 @@
         <h2>ข้อมูล หนังสือ </h2>
     <label class="col-sm-2 control-label">รหัสหนังสือ</label>
             <div class="col-sm-4">
-        <asp:TextBox ID="bookidtxt" runat="server"></asp:TextBox>
+        <asp:TextBox ID="bookidtxt" runat="server" placeholder="ระบุรหัสหนังสือ"></asp:TextBox>
         </div><br />
         <label class="col-sm-2 control-label">ชื่อหนังสือ</label>
         <div class="col-sm-4">
-        <asp:TextBox ID="booknametxt" runat="server"></asp:TextBox>
+        <asp:TextBox ID="booknametxt" runat="server" placeholder="ระบุชื่อหนังสือ"></asp:TextBox>
         </div><br />
         <label class="col-sm-2 control-label">ประเภทหนังสือ</label>
         <div class="col-sm-4">
@@ -58,11 +58,11 @@
         </div><br />
         <label class="col-sm-2 control-label">ราคาหนังสือ</label>
         <div class="col-sm-4">
-         <asp:TextBox ID="bookptxt" runat="server"></asp:TextBox>
+         <asp:TextBox ID="bookptxt" runat="server" placeholder="ระบุราคา"></asp:TextBox>
         </div><br />
         <label class="col-sm-2 control-label">ผู้แต่ง</label>
         <div class="col-sm-4">
-         <asp:TextBox ID="Usernametxt" runat="server"></asp:TextBox>
+         <asp:TextBox ID="Usernametxt" runat="server" placeholder="ระบุผู้แต่ง"></asp:TextBox>
         </div>
         <br />
         </dir>

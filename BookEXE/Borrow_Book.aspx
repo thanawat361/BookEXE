@@ -17,9 +17,6 @@
             <asp:BoundField DataField="ReturnTime" HeaderText="วันที่คืน" SortExpression="ReturnTime" />
         </Columns>
     </asp:GridView>
-    <Columns>
-            
-        </Columns>
 
 
     <asp:Panel ID="Panel1" runat="server" >
@@ -29,11 +26,11 @@
 
     <label class="col-sm-2 control-label">รหัสผู้ใช้งาน</label>
             <div class="col-sm-4">
-        <asp:TextBox ID="UserIDTB" runat="server"></asp:TextBox>
+        <asp:TextBox ID="UserIDTB" runat="server" placeholder="ระบุรหัสผู้ใช้งาน"></asp:TextBox>
         </div><br />
     <label class="col-sm-2 control-label">ชื่อผู้ใช้งาน</label>
             <div class="col-sm-4">
-        <asp:TextBox ID="UserNameTB" runat="server"></asp:TextBox>
+        <asp:TextBox ID="UserNameTB" runat="server" placeholder="ระบุชื่อผู้ใช้งาน"></asp:TextBox>
         </div><br />
     <label class="col-sm-2 control-label">ชื่อหนังสือที่ต้องการ</label>
     <div class="col-sm-4"><asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="BookSDS" DataTextField="BookName" DataValueField="BookName" Height="27px" Width="250px"></asp:DropDownList></div><br />
